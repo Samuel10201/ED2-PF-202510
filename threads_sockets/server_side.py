@@ -21,7 +21,7 @@ class ClientThread(threading.Thread):
         print("Client at ", clientAddress, " disconnected")
 
 
-LOCALHOST = "192.168.1.4"
+LOCALHOST = "192.168.128.21"
 PORT = 8080
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
