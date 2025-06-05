@@ -134,7 +134,7 @@ if __name__ == "__main__":
     print("Se obtuvieron todos los datos")
 
     # 🆕 Tamaños de muestra
-    sizes = np.linspace(100, 1_000_000, num=30, dtype=int)
+    sizes = np.linspace(0, 1_000_000, num=30, dtype=int)
     sizes = sorted(list(set(sizes)))  # Eliminar posibles duplicados
 
     manager = Manager()
