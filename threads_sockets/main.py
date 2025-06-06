@@ -502,7 +502,7 @@ def tiempo_quick_sort_total():
 
 
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     import queue
 
     resultados = queue.Queue()
@@ -542,7 +542,7 @@ if __name__ == "__main__":
     }
 
 with open("resultado2.json", "w", encoding="utf-8") as f2:
-    json.dump(json_completo2, f2, indent=4)
+    json.dump(json_completo2, f2, indent=4)"""
 
 def graficar_tiempos_promedio(ins, bubble, counting, quick):
     algoritmos = ['Inserción', 'Bubble Sort', 'Counting Sort', 'Quick Sort']
@@ -586,19 +586,19 @@ def hilo_quick():
 if __name__ == "__main__":
     # Crear los hilos
     t1 = threading.Thread(target=hilo_insercion)
-    t2 = threading.Thread(target=hilo_bubble)
+    #t2 = threading.Thread(target=hilo_bubble)
     t3 = threading.Thread(target=hilo_counting)
     t4 = threading.Thread(target=hilo_quick)
 
     # Iniciar los hilos
     t1.start()
-    t2.start()
+    #t2.start()
     t3.start()
     t4.start()
 
     # Esperar a que todos terminen
     t1.join()
-    t2.join()
+    #t2.join()
     t3.join()
     t4.join()
 
