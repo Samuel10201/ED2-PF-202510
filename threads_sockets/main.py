@@ -502,7 +502,7 @@ def tiempo_quick_sort_total():
 
 
 
-"""if __name__ == "__main__":
+if __name__ == "__main__":
     import queue
 
     resultados = queue.Queue()
@@ -542,7 +542,7 @@ def tiempo_quick_sort_total():
     }
 
 with open("resultado2.json", "w", encoding="utf-8") as f2:
-    json.dump(json_completo2, f2, indent=4)"""
+    json.dump(json_completo2, f2, indent=4)
 
 def graficar_tiempos_promedio(ins, bubble, counting, quick):
     algoritmos = ['Inserción', 'Bubble Sort', 'Counting Sort', 'Quick Sort']
