@@ -20,7 +20,6 @@ class ClientThread(threading.Thread):
 
             total_size = int(size_data.decode('utf-8'))
 
-<<<<<<< HEAD
             # Ahora recibe exactamente `total_size` bytes
             buffer = b""
             while len(buffer) < total_size:
@@ -52,10 +51,7 @@ class ClientThread(threading.Thread):
             print("Client at", self.clientAddress, "disconnected")
             self.csocket.close()
 
-LOCALHOST = "0.0.0.0"
-=======
-LOCALHOST = "192.168.128.21"
->>>>>>> origin/Samuel
+LOCALHOST = "10.20.25.51"
 PORT = 8080
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
